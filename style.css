@@ -16,9 +16,10 @@ body {
 }
 
 main {
-  background: url(img/bg.svg);
-  width: 375px;
-  height: 812px;
+  background: url(img/bg.svg) no-repeat center/cover;
+  min-height: 812px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
@@ -28,7 +29,7 @@ main {
   text-align: center;
   color: var(--grey);
 }
-
+  
 .avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
@@ -74,4 +75,37 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+@media(min-width: 767.98px) {
+  main {
+    background: url(img/bgDesktop.svg) no-repeat center top;
+    background-color: #121214;
+  }
+
+  .container {
+    min-height: 540px;
+    min-width: 358px;
+    margin-top: -1.2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding-bottom: 2.5rem;
+    background: url(img/bgCracha.svg) no-repeat center/cover;
+  }
+
+  .avatar {
+    width: 10rem;
+    margin: 15.5rem auto 0;
+    position: relative;
+  }
+
+  p {
+    width: 70%;
+    margin: 2rem auto 0;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+  
 }
